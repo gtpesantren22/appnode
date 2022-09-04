@@ -8,11 +8,18 @@ app.use(BodyParser.urlencoded({ extended: true }))
 app.set("view engine", "ejs")
 app.set("views", "views")
 
+// const db = mysql.createConnection({
+//     host: "localhost",
+//     database: "db_sentral",
+//     user: "root",
+//     password: ""
+// })
+
 const db = mysql.createConnection({
     host: "localhost",
-    database: "db_sentral",
-    user: "root",
-    password: ""
+    database: "u9048253_sentral",
+    user: "u9048253_dwk",
+    password: "PesantrenDWKIT2021"
 })
 
 db.connect((err) => {
